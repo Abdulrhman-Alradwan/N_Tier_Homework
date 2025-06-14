@@ -3,42 +3,69 @@ using NTierTodoApp.Business;
 
 namespace NTierTodoApp.Controllers
 {
+    /// <summary>
+    /// Controller for handling task-related operations
+    /// متحكم لمعالجة العمليات المتعلقة بالمهام
+    /// </summary>
     public class HomeController : Controller
     {
-        private readonly TaskService taskService;
+        private readonly TaskService _taskService;
 
+        /// <summary>
+        /// Initializes a new instance of HomeController
+        /// تهيئة مثيل جديد من HomeController
+        /// </summary>
+        /// <param name="service">Task service instance - خدمة المهام</param>
         public HomeController(TaskService service)
         {
-            taskService = service;
+            _taskService = service;
         }
 
+        /// <summary>
+        /// Displays the task list view
+        /// عرض قائمة المهام
+        /// </summary>
         public IActionResult Index()
         {
-            var tasks = taskService.GetTasks();
+            var tasks = _taskService.GetTasks();
             return View(tasks);
         }
 
+        /// <summary>
+        /// Adds a new task
+        /// إضافة مهمة جديدة
+        /// </summary>
+        /// <param name="title">Task title - عنوان المهمة</param>
         [HttpPost]
         public IActionResult AddTask(string title)
         {
             if (!string.IsNullOrWhiteSpace(title))
-                taskService.AddTask(title);
+                _taskService.AddTask(title);
+
             return RedirectToAction("Index");
         }
 
+        /// <summary>
+        /// Marks a task as complete
+        /// تعليم المهمة كمكتملة
+        /// </summary>
+        /// <param name="id">Task ID - معرّف المهمة</param>
         [HttpPost]
         public IActionResult CompleteTask(int id)
         {
-            taskService.CompleteTask(id);
+            _taskService.CompleteTask(id);
             return RedirectToAction("Index");
         }
 
-        // TODO: تنفيذ إجراء حذف المهمة
+        /// <summary>
+        /// Deletes a task
+        /// حذف مهمة
+        /// </summary>
+        /// <param name="id">Task ID - معرّف المهمة</param>
         [HttpPost]
         public IActionResult DeleteTask(int id)
         {
-            // TODO: استخدام TaskService لتنفيذ عملية حذف المهمة
-            
+            _taskService.DeleteTask(id);
             return RedirectToAction("Index");
         }
     }

@@ -13,3 +13,4 @@ D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.dll
 D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\refint\Business.dll
 D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.pdb
 D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\ref\Business.dll
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.sourcelink.json
