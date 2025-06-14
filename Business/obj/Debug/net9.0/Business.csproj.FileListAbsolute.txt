@@ -1,0 +1,15 @@
+D:\N_Tier\TodoSolution\Business\bin\Debug\net9.0\Business.deps.json
+D:\N_Tier\TodoSolution\Business\bin\Debug\net9.0\Business.dll
+D:\N_Tier\TodoSolution\Business\bin\Debug\net9.0\Business.pdb
+D:\N_Tier\TodoSolution\Business\bin\Debug\net9.0\DataAccess.dll
+D:\N_Tier\TodoSolution\Business\bin\Debug\net9.0\DataAccess.pdb
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.csproj.AssemblyReference.cache
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.GeneratedMSBuildEditorConfig.editorconfig
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.AssemblyInfoInputs.cache
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.AssemblyInfo.cs
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.csproj.CoreCompileInputs.cache
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.csproj.Up2Date
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.dll
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\refint\Business.dll
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\Business.pdb
+D:\N_Tier\TodoSolution\Business\obj\Debug\net9.0\ref\Business.dll
